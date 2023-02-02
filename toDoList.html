@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Content-Security-Policy" content="default-src 'self'">
+  <meta name="application-name" content="ToDo List app">
+  <meta name="google" content="notranslate">
+  <meta name="subject" content="Some online way to manage your daily tasks">
+  <meta name="rating" content="General">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>ToDo List</title>
+  <meta name="author" content="Moga Andrei">
+  <meta name="description" content="A ToDo list built in browser to help you with your daily tasks. We all love to procrastinate, but it is not good!">
+</head>
+<body>
+  <div class="space-header"></div>
+
+  <header class="header">
+    <h1 class="h1-header">ToDo list app</h1>
+    <p class="p-header">Why use a pen and a notebook? Why throwing all your money on paper, ink and accessories?</p>
+    <p class="p-header">Make your days easier to manage with this <i>ToDo List</i> app on your browser.</p>
+  </header>
+
+  <form class="addATask">
+    <div class="divAddTask">
+      <p class="p-addATask">Add something new to the list</p>
+      <div class="inputandadd">
+        <input class="inputAddElement" type="text" name="add" placeholder="Write here">
+        <input class="inputAddSubmit" type="submit" value="Add">
+      </div>
+    </div>
+  </form>
+
+  <ul>
+    <li>
+      <span>Example: Groceries</span>
+      <div class="flex">
+        <input class="checkbox" type="checkbox" name="checkbox">
+        <button class="delete">Del</button>
+      </div>
+    </li>
+    <li>
+      <span>Example2: Take dog out</span>
+      <div class="flex">
+        <input class="checkbox" type="checkbox" name="checkbox">
+        <button class="delete">Del</button>
+      </div>
+    </li>
+  </ul>
+
+  <form class="searchTask">
+    <div class="divSearchTask">
+      <p>Search here for a certain task</p>
+      <div class="inputandsearch">
+        <input class="inputSearchTask" type="text" name="search" placeholder="keywords or the task itself">
+        <input class="inputSubmitSearch" type="submit" value="Search">
+      </div>
+    </div>
+  </form>
+
+  <div class="footer"></div>
+  
+</body>
+</html>
